@@ -13,13 +13,9 @@ const styles = {
 };
 
 export default class Loading extends React.Component {
-  constructor(props) {
-    super(props);
-
-    this.state = {
-      content: props.text,
-    };
-  }
+  state = {
+    content: this.props.text,
+  };
 
   // making them reuseable by making the props default and then using them like this throughout the component. Inside the componentDidMount destructing the props object and placing the props in accordingly.
 
